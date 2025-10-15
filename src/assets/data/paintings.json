@@ -5,7 +5,7 @@
     "year": 2024,
     "medium": "Olie op doek",
     "size": "80x60 cm",
-    "imageUrl": "assets/images/zonsondergang.jpg",
+    "imageUrl": "assets/images/paintings/deBloeiVanMoederAarde.jpg",
     "description": "Een warme avondlucht boven de golven, geschilderd met zachte penseelstreken die de beweging van het water benadrukken."
   },
   {
@@ -14,7 +14,7 @@
     "year": 2023,
     "medium": "Acryl op doek",
     "size": "50x70 cm",
-    "imageUrl": "assets/images/stilleven.jpg",
+    "imageUrl": "assets/images/paintings/deGroei.jpg",
     "description": "Een levendige compositie van veldbloemen in een glazen vaas, met nadruk op lichtreflecties en kleurcontrasten."
   },
   {
@@ -23,7 +23,7 @@
     "year": 2022,
     "medium": "Olie op paneel",
     "size": "90x60 cm",
-    "imageUrl": "assets/images/stadspoort.jpg",
+    "imageUrl": "assets/images/paintings/deEsotherischeBloem.jpg",
     "description": "Een historisch stadszicht met een gouden gloed in de late namiddagzon. De poort symboliseert verbinding tussen oud en nieuw."
   },
   {
@@ -32,7 +32,7 @@
     "year": 2024,
     "medium": "Aquarel op papier",
     "size": "40x50 cm",
-    "imageUrl": "assets/images/herfstbos.jpg",
+    "imageUrl": "assets/images/paintings/deKeuzesVanDeLevenspartnerBig.jpg",
     "description": "Warme oker- en roodtinten brengen de sfeer van een stille herfstdag tot leven. Losse penseeltoetsen vangen het vallende blad."
   },
   {
@@ -41,7 +41,7 @@
     "year": 2023,
     "medium": "Acryl op doek",
     "size": "60x80 cm",
-    "imageUrl": "assets/images/denker.jpg",
+    "imageUrl": "assets/images/paintings/DeKlimInDeRuimteBig.jpg",
     "description": "Een introspectief portret met nadruk op schaduw en expressie. De blik suggereert een moment van overpeinzing."
   },
   {
@@ -50,7 +50,7 @@
     "year": 2022,
     "medium": "Olie op doek",
     "size": "100x70 cm",
-    "imageUrl": "assets/images/avondlicht.jpg",
+    "imageUrl": "assets/images/paintings/deLiefdeVanHetLevenBig.jpg",
     "description": "Een rustig landschap met weidse velden en lange schaduwen. De warme gloed van de ondergaande zon vormt het middelpunt."
   }
 ]
