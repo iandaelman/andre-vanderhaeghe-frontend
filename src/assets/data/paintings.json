@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Zonsondergang aan zee",
+    "year": 2024,
+    "medium": "Olie op doek",
+    "size": "80x60 cm",
+    "imageUrl": "assets/images/zonsondergang.jpg",
+    "description": "Een warme avondlucht boven de golven, geschilderd met zachte penseelstreken die de beweging van het water benadrukken."
+  },
+  {
+    "id": 2,
+    "title": "Stilleven met bloemen",
+    "year": 2023,
+    "medium": "Acryl op doek",
+    "size": "50x70 cm",
+    "imageUrl": "assets/images/stilleven.jpg",
+    "description": "Een levendige compositie van veldbloemen in een glazen vaas, met nadruk op lichtreflecties en kleurcontrasten."
+  },
+  {
+    "id": 3,
+    "title": "De oude stadspoort",
+    "year": 2022,
+    "medium": "Olie op paneel",
+    "size": "90x60 cm",
+    "imageUrl": "assets/images/stadspoort.jpg",
+    "description": "Een historisch stadszicht met een gouden gloed in de late namiddagzon. De poort symboliseert verbinding tussen oud en nieuw."
+  },
+  {
+    "id": 4,
+    "title": "Herfst in het bos",
+    "year": 2024,
+    "medium": "Aquarel op papier",
+    "size": "40x50 cm",
+    "imageUrl": "assets/images/herfstbos.jpg",
+    "description": "Warme oker- en roodtinten brengen de sfeer van een stille herfstdag tot leven. Losse penseeltoetsen vangen het vallende blad."
+  },
+  {
+    "id": 5,
+    "title": "Portret van een denker",
+    "year": 2023,
+    "medium": "Acryl op doek",
+    "size": "60x80 cm",
+    "imageUrl": "assets/images/denker.jpg",
+    "description": "Een introspectief portret met nadruk op schaduw en expressie. De blik suggereert een moment van overpeinzing."
+  },
+  {
+    "id": 6,
+    "title": "Avondlicht over het veld",
+    "year": 2022,
+    "medium": "Olie op doek",
+    "size": "100x70 cm",
+    "imageUrl": "assets/images/avondlicht.jpg",
+    "description": "Een rustig landschap met weidse velden en lange schaduwen. De warme gloed van de ondergaande zon vormt het middelpunt."
+  }
+]
