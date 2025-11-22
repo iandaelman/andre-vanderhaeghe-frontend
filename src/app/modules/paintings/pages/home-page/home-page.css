@@ -1,0 +1,12 @@
+.painting-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.painting-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
