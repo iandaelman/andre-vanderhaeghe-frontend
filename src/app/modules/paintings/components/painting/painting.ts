@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './painting.html',
   styleUrl: './painting.css',
-  standalone: true,
 })
 export class Painting {}
