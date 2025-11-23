@@ -1,5 +1,5 @@
 <div class="painting-card">
-  @for (painting of paintingList(); track $index) {
+  @for (painting of paintings(); track painting.id) {
   <h2>{{ painting.title }}</h2>
   <img [src]="painting.imageUrl" alt="{{ painting.title }}" />
   <p>{{ painting.description }}</p>

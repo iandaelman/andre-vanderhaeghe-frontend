@@ -1,20 +1,20 @@
-import { PaintingModel } from './../../models/painting.model';
-import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { PaintingsService } from '../../services/paintings.service';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { PaintingModel } from './../../models/painting.model';
 
 @Component({
   selector: 'app-home-page',
+  standalone: true,
   imports: [],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })
-export class HomePage {
-  readonly paintingList = signal<PaintingModel[]>([]);
+export class HomePage implements OnInit {
+  private paintingService = inject(PaintingsService);
 
-  constructor(private paintingService: PaintingsService) {
-    const paintingSignal = toSignal(this.paintingService.getPaintings(), { initialValue: [] });
+  public paintings = this.paintingService.paintings;
 
-    this.paintingList.set(paintingSignal());
+  ngOnInit(): void {
+    this.paintingService.loadPaintings();
   }
 }
