@@ -31,3 +31,17 @@
   padding: 10px 15px;
   text-align: center;
 }
+
+/* Tablet: 2 per rij */
+@media (max-width: 900px) {
+  .painting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobiel: 1 per rij */
+@media (max-width: 600px) {
+  .painting-grid {
+    grid-template-columns: 1fr;
+  }
+}

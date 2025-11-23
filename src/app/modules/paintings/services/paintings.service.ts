@@ -18,11 +18,24 @@ export class PaintingsService {
 
     this.http.get<PaintingModel[]>(this.dataUrl).subscribe({
       next: (data) => {
-        this.paintings.set(data);
+        const sortedData = this.sortPaintings(data);
+        this.paintings.set(sortedData);
       },
       error: (err) => {
         console.error('Not able to fetch the paintings', err);
       },
+    });
+  }
+
+  sortPaintings(data: PaintingModel[]): PaintingModel[] {
+    return data.sort((a, b) => {
+      const categoryCompare = a.category.localeCompare(b.category);
+      if (categoryCompare !== 0) return categoryCompare;
+
+      const titleCompare = a.title.localeCompare(b.title);
+      if (titleCompare !== 0) return titleCompare;
+
+      return a.length * a.width - b.length * b.width;
     });
   }
 
