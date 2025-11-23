@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Zonsondergang aan zee",
+    "title": "De bloei van moeder aarde",
     "category": "Blauw",
     "length": 80,
     "width": 60,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Stilleven met bloemen",
+    "title": "De groei",
     "category": "Blauw",
     "length": 80,
     "width": 60,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "De oude stadspoort",
+    "title": "De esotherische bloem",
     "category": "Blauw",
     "length": 80,
     "width": 60,
@@ -28,16 +28,16 @@
   },
   {
     "id": 4,
-    "title": "Herfst in het bos",
+    "title": "De keuzes van de levenspartner",
     "category": "Blauw",
     "length": 80,
     "width": 60,
-    "imageUrl": "assets/images/paintings/deKeuzesVanDeLevenspartnerBig.jpg",
+    "imageUrl": "assets/images/paintings/DeKeuzeVandeLevenspartnerBig.jpg",
     "description": "Warme oker- en roodtinten brengen de sfeer van een stille herfstdag tot leven. Losse penseeltoetsen vangen het vallende blad."
   },
   {
     "id": 5,
-    "title": "Portret van een denker",
+    "title": "De klim in de ruimte",
     "category": "Blauw",
     "length": 80,
     "width": 60,
@@ -46,11 +46,11 @@
   },
   {
     "id": 6,
-    "title": "Avondlicht over het veld",
+    "title": "De liefde van het leven",
     "category": "Blauw",
     "length": 80,
     "width": 60,
-    "imageUrl": "assets/images/paintings/deLiefdeVanHetLevenBig.jpg",
+    "imageUrl": "assets/images/paintings/DeLiefdeVanHetLevenBig.jpg",
     "description": "Een rustig landschap met weidse velden en lange schaduwen. De warme gloed van de ondergaande zon vormt het middelpunt."
   }
 ]
