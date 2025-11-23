@@ -1,0 +1,55 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between; /* logo links, nav rechts */
+  align-items: center;
+  flex-wrap: nowrap; /* voorkomt dat items op een nieuwe regel gaan */
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigatie */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* voorkomt dat links breken naar nieuwe regel */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive: mobiel */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
