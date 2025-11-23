@@ -1,0 +1,60 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.site-footer {
+  background-color: #fff; /* wit */
+  color: #000; /* tekst zwart */
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* tekst links, social links rechts */
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-left: 15px;
+  transition: transform 0.3s;
+  color: #000; /* icon kleur zwart */
+  text-decoration: none; /* verwijder onderlijnen */
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  color: #555; /* optionele hover kleur iets donkerder */
+}
+
+/* Als je FontAwesome iconen gebruikt als <i> tags */
+.social-links a i {
+  font-size: 24px; /* pas aan indien nodig */
+}
+
+/* Als je afbeeldingen gebruikt, filter zwart */
+.social-links a img {
+  height: 24px; /* pas aan indien nodig */
+  width: auto;
+  filter: brightness(0) invert(0); /* maakt afbeelding zwart */
+}
+
+/* Responsive: mobiel */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .social-links a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
