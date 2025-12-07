@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { PaintingModel } from '../../models/painting.model';
 
 @Component({
   selector: 'app-painting',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './painting.html',
   styleUrl: './painting.css',
 })
-export class Painting {}
+export class Painting {
+  painting = input.required<PaintingModel>();
+}

@@ -1,11 +1,5 @@
 <div class="painting-grid">
   @for (painting of paintings(); track painting.id) {
-  <div class="painting-card">
-    <div class="image-container">
-      <img [src]="painting.imageUrl" alt="{{ painting.title }}" />
-    </div>
-    <h2>{{ painting.title }}</h2>
-    <p>{{ painting.description }}</p>
-  </div>
+  <app-painting [painting]="painting"></app-painting>
   }
 </div>
