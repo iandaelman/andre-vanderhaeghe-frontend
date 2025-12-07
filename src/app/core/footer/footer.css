@@ -1,19 +1,18 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 .site-footer {
-  background-color: #fff; /* wit */
-  color: #000; /* tekst zwart */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 30px;
-  box-sizing: border-box;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* tekst links, social links rechts */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .footer-container p {
