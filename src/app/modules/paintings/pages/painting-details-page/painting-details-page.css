@@ -4,8 +4,8 @@
   gap: 1rem;
   padding: 2rem;
   align-items: start;
-  max-width: 1100px; /* beperk de totale breedte */
-  margin: 0 auto; /* centreer de container */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .image-container {
@@ -29,9 +29,34 @@ mat-accordion {
   gap: 0.5rem;
 }
 
+::ng-deep mat-expansion-panel-header {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+}
+
 ::ng-deep .mat-expansion-panel-header-title {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+::ng-deep .mat-expansion-panel-body p {
+  margin: 0.5rem 0;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-size: 1.25rem;
+  color: #666;
 }
 
 /* Responsive voor kleinere schermen */

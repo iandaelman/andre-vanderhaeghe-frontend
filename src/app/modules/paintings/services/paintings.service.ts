@@ -1,6 +1,6 @@
 import { PaintingModel } from './../models/painting.model';
 import { HttpClient } from '@angular/common/http';
-import { Injectable, signal } from '@angular/core';
+import { computed, Injectable, Signal, signal } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
@@ -39,11 +39,22 @@ export class PaintingsService {
     });
   }
 
-  getPaintingById(id: number): PaintingModel {
-    const painting = this.paintings().find((p) => p.id === id);
-    if (!painting) {
-      throw new Error(`Painting met Id ${id} werd niet gevonden`);
-    }
-    return painting;
+  getPaintingById(id: number): Signal<PaintingModel | undefined> {
+    return computed(() => {
+      const paintings = this.paintings();
+
+      // Als paintings nog niet geladen zijn, return undefined
+      if (paintings.length === 0) {
+        return undefined;
+      }
+
+      // Als paintings wel geladen zijn maar painting niet gevonden
+      const painting = paintings.find((p) => p.id === id);
+      if (!painting) {
+        throw new Error(`Painting met Id ${id} werd niet gevonden`);
+      }
+
+      return painting;
+    });
   }
 }
