@@ -39,7 +39,11 @@ export class PaintingsService {
     });
   }
 
-  getPaintingById(id: number): PaintingModel | undefined {
-    return this.paintings().find((p) => p.id === id);
+  getPaintingById(id: number): PaintingModel {
+    const painting = this.paintings().find((p) => p.id === id);
+    if (!painting) {
+      throw new Error(`Painting met Id ${id} werd niet gevonden`);
+    }
+    return painting;
   }
 }

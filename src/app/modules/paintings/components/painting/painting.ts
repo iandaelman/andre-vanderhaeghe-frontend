@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { PaintingModel } from '../../models/painting.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-painting',
@@ -10,7 +11,9 @@ import { PaintingModel } from '../../models/painting.model';
 export class Painting {
   painting = input.required<PaintingModel>();
 
-  onClickToDetailPage() {
-    throw new Error('Method not implemented.');
+  constructor(private router: Router) {}
+
+  onClickToDetailPage(paitingId: number) {
+    this.router.navigate(['/painting-details', paitingId]);
   }
 }
