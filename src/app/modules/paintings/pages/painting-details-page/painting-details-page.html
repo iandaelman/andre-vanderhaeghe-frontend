@@ -1,5 +1,24 @@
-<div class="content-wrapper">
+<div class="detail-container">
   <div class="image-container">
     <img [src]="painting.imageUrl" alt="{{ painting.title }}" />
   </div>
+  <mat-accordion displayMode="flat" [multi]="false" [hideToggle]="false">
+    <mat-expansion-panel [hideToggle]="false">
+      <mat-expansion-panel-header>Titel</mat-expansion-panel-header>
+      <p>{{ painting.title }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel [hideToggle]="false">
+      <mat-expansion-panel-header>Periode</mat-expansion-panel-header>
+      <p>{{ painting.category }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel [hideToggle]="false">
+      <mat-expansion-panel-header>Omschrijving</mat-expansion-panel-header>
+      <p>{{ painting.description }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel [hideToggle]="false">
+      <mat-expansion-panel-header>Afmetingen</mat-expansion-panel-header>
+      <p>Lengte: {{ painting.length }}</p>
+      <p>Breedte: {{ painting.width }}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
