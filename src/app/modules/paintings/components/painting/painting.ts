@@ -9,4 +9,8 @@ import { PaintingModel } from '../../models/painting.model';
 })
 export class Painting {
   painting = input.required<PaintingModel>();
+
+  onClickToDetailPage() {
+    throw new Error('Method not implemented.');
+  }
 }
