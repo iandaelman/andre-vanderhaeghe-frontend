@@ -1,22 +1,22 @@
 import { PaintingModel } from './../models/painting.model';
 import { HttpClient } from '@angular/common/http';
-import { computed, Injectable, Signal, signal } from '@angular/core';
+import { computed, inject, Injectable, Signal, signal } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
 export class PaintingsService {
   private dataUrl = 'assets/data/paintings.json';
 
-  public paintings = signal<PaintingModel[]>([]);
+  private httpClient = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  public paintings = signal<PaintingModel[]>([]);
 
   loadPaintings(): void {
     if (this.paintings().length > 0) {
       return;
     }
 
-    this.http.get<PaintingModel[]>(this.dataUrl).subscribe({
+    this.httpClient.get<PaintingModel[]>(this.dataUrl).subscribe({
       next: (data) => {
         const sortedData = this.sortPaintings(data);
         this.paintings.set(sortedData);
