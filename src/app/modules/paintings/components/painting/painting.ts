@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
-import { PaintingModel } from '../../models/painting.model';
 import { Router } from '@angular/router';
+import { PaintingModel } from '../../models/painting.model';
 
 @Component({
   selector: 'app-painting',

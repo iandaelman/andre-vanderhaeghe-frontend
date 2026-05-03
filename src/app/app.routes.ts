@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: PaintingDetailsPage,
   },
   {
-    path: 'bio',
+    path: 'biografie',
     component: BiographyPage,
   },
 ];

@@ -1,0 +1,269 @@
+/* ===========================
+   Bio Page — biography-page.css
+   =========================== */
+
+.bio-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1a1a1a;
+}
+
+/* --- Hero --- */
+.bio-hero {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #e0ddd7;
+}
+
+.bio-portrait {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.bio-intro h1 {
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  margin: 0 0 8px;
+}
+
+.bio-dates {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 16px;
+  font-style: italic;
+}
+
+.bio-tagline {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* --- Samenvatting --- */
+.bio-summary {
+  margin-bottom: 3rem;
+}
+
+.bio-summary p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+  margin: 0 0 1rem;
+}
+
+.bio-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Secties algemeen --- */
+.bio-periods h2,
+.bio-timeline h2,
+.bio-publications h2,
+.bio-monografie h2 {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 2rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0ddd7;
+  font-family: Arial, sans-serif;
+}
+
+/* --- Periodes --- */
+.bio-periods {
+  margin-bottom: 3.5rem;
+}
+
+.period {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0 2.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.period:last-child {
+  border-bottom: none;
+}
+
+.period-header {
+  padding-top: 4px;
+}
+
+.period-years {
+  display: block;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #aaa;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+
+.period h3 {
+  font-size: 17px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.period p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #444;
+  margin: 0 0 0.75rem;
+}
+
+.period p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Tijdlijn --- */
+.bio-timeline {
+  margin-bottom: 3.5rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0ede8;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.timeline li:last-child {
+  border-bottom: none;
+}
+
+.timeline .year {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #aaa;
+  min-width: 36px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+/* --- Publicaties --- */
+.bio-publications {
+  margin-bottom: 3.5rem;
+}
+
+.bio-publications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bio-publications li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.bio-publications li:last-child {
+  border-bottom: none;
+}
+
+/* --- Monografie --- */
+.bio-monografie {
+  margin-bottom: 2rem;
+}
+
+.monografie-inner {
+  background: #f8f6f2;
+  padding: 2rem;
+  border-radius: 2px;
+}
+
+.bio-monografie h2 {
+  border-bottom-color: #e0ddd7;
+}
+
+.monografie-inner > div > h2 {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 1rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0ddd7;
+  font-family: Arial, sans-serif;
+}
+
+.monografie-inner p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 6px;
+  line-height: 1.7;
+}
+
+.btn-contact {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.08em;
+  padding: 10px 22px;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.btn-contact:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .bio-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio-portrait {
+    width: 140px;
+    height: 170px;
+  }
+
+  .period {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .period-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
