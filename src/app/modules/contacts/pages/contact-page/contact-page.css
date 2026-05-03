@@ -1,0 +1,224 @@
+/* ===========================
+   Contact Page — contact-page.css
+   =========================== */
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.contact-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1a1a1a;
+}
+
+/* --- Header --- */
+.contact-header {
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #e0ddd7;
+}
+
+.contact-header h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.contact-header p {
+  font-size: 15px;
+  color: #888;
+  margin: 0;
+  font-style: italic;
+}
+
+/* --- Layout --- */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* --- Formulier --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #faf9f7;
+  border: 1px solid #e0ddd7;
+  border-radius: 2px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1a1a1a;
+  background: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.7;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
+}
+
+.btn-submit {
+  align-self: flex-start;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-submit:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+/* --- Aside --- */
+.contact-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aside-block {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0ddd7;
+}
+
+.aside-block:last-child {
+  border-bottom: none;
+}
+
+.aside-block h2 {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 12px;
+}
+
+.aside-block p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0 0 8px;
+}
+
+.email-link {
+  font-size: 14px;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #e0ddd7;
+  transition: border-color 0.2s;
+  word-break: break-all;
+}
+
+.email-link:hover {
+  border-color: #1a1a1a;
+}
+
+/* --- Social links --- */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: #555;
+}
+
+.social-links a i {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+/* --- Monografie knop --- */
+.btn-mono {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.06em;
+  padding: 9px 18px;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 1px;
+}
+
+.btn-mono:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}

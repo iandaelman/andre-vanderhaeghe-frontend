@@ -1,0 +1,75 @@
+<article class="contact-page">
+  <header class="contact-header">
+    <h1>Contact</h1>
+    <p>Voor vragen over schilderijen, tentoonstellingen of de monografie.</p>
+  </header>
+
+  <div class="contact-layout">
+    <!-- Formulier -->
+    <section class="contact-form-section">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Naam</label>
+          <input id="name" type="text" name="name" placeholder="Uw naam" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mailadres</label>
+          <input id="email" type="email" name="email" placeholder="uw@email.be" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Onderwerp</label>
+          <select id="subject" name="subject">
+            <option value="">Kies een onderwerp</option>
+            <option value="schilderij">Vraag over een schilderij</option>
+            <option value="tentoonstelling">Tentoonstelling</option>
+            <option value="monografie">Monografie</option>
+            <option value="anders">Andere</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Bericht</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Uw bericht..."
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Verstuur bericht</button>
+      </form>
+    </section>
+
+    <!-- Socials & info -->
+    <aside class="contact-aside">
+      <div class="aside-block">
+        <h2>Volg ons</h2>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="aside-block">
+        <h2>Monografie</h2>
+        <p>Hardcover · 30 × 22 cm · 76 bladzijden<br />Vier periodes — één oeuvre.</p>
+        <a
+          href="mailto:xavier_vanderhaeghe@skynet.be?subject=Interesse monografie"
+          class="btn-mono"
+        >
+          Interesse? Neem contact op
+        </a>
+      </div>
+    </aside>
+  </div>
+</article>
