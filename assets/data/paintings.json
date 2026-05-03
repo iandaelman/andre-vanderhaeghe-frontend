@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "De bloei van moeder aarde",
+    "category": "Blauw",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/deBloeiVanMoederAarde.jpg",
+    "description": "Een warme avondlucht boven de golven, geschilderd met zachte penseelstreken die de beweging van het water benadrukken."
+  },
+  {
+    "id": 2,
+    "title": "De groei",
+    "category": "Blauw",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/deGroei.jpg",
+    "description": "Een levendige compositie van veldbloemen in een glazen vaas, met nadruk op lichtreflecties en kleurcontrasten."
+  },
+  {
+    "id": 3,
+    "title": "De esotherische bloem",
+    "category": "Groen",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/deEsotherischeBloem.jpg",
+    "description": "Een historisch stadszicht met een gouden gloed in de late namiddagzon. De poort symboliseert verbinding tussen oud en nieuw."
+  },
+  {
+    "id": 4,
+    "title": "De keuzes van de levenspartner",
+    "category": "Blauw",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/DeKeuzeVandeLevenspartnerBig.jpg",
+    "description": "Warme oker- en roodtinten brengen de sfeer van een stille herfstdag tot leven. Losse penseeltoetsen vangen het vallende blad."
+  },
+  {
+    "id": 5,
+    "title": "De klim in de ruimte",
+    "category": "Blauw",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/DeKlimInDeRuimteBig.jpg",
+    "description": "Een introspectief portret met nadruk op schaduw en expressie. De blik suggereert een moment van overpeinzing."
+  },
+  {
+    "id": 6,
+    "title": "De liefde van het leven",
+    "category": "Blauw",
+    "length": 80,
+    "width": 60,
+    "imageUrl": "assets/images/paintings/DeLiefdeVanHetLevenBig.jpg",
+    "description": "Een rustig landschap met weidse velden en lange schaduwen. De warme gloed van de ondergaande zon vormt het middelpunt."
+  }
+]
