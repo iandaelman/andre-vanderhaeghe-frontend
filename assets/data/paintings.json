@@ -1,56 +1,893 @@
 [
   {
     "id": 1,
-    "title": "De bloei van moeder aarde",
-    "category": "Blauw",
-    "length": 80,
-    "width": 60,
-    "imageUrl": "assets/images/paintings/deBloeiVanMoederAarde.jpg",
-    "description": "Een warme avondlucht boven de golven, geschilderd met zachte penseelstreken die de beweging van het water benadrukken."
+    "titleNL": "Het afwisselende verschijnsel van een constructie",
+    "titleFR": "Les phases d'une construction",
+    "category": "Design",
+    "length": 90,
+    "width": 120,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-1.jpg"
   },
   {
     "id": 2,
-    "title": "De groei",
-    "category": "Blauw",
-    "length": 80,
-    "width": 60,
-    "imageUrl": "assets/images/paintings/deGroei.jpg",
-    "description": "Een levendige compositie van veldbloemen in een glazen vaas, met nadruk op lichtreflecties en kleurcontrasten."
+    "titleNL": "Movements 4",
+    "titleFR": "Movements 4",
+    "category": "Design",
+    "length": 90,
+    "width": 150,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-2.jpg"
   },
   {
     "id": 3,
-    "title": "De esotherische bloem",
-    "category": "Groen",
-    "length": 80,
-    "width": 60,
-    "imageUrl": "assets/images/paintings/deEsotherischeBloem.jpg",
-    "description": "Een historisch stadszicht met een gouden gloed in de late namiddagzon. De poort symboliseert verbinding tussen oud en nieuw."
+    "titleNL": "Geo 6",
+    "titleFR": "Geo 6",
+    "category": "Design",
+    "length": 150,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-3.jpg"
   },
   {
     "id": 4,
-    "title": "De keuzes van de levenspartner",
-    "category": "Blauw",
-    "length": 80,
-    "width": 60,
-    "imageUrl": "assets/images/paintings/DeKeuzeVandeLevenspartnerBig.jpg",
-    "description": "Warme oker- en roodtinten brengen de sfeer van een stille herfstdag tot leven. Losse penseeltoetsen vangen het vallende blad."
+    "titleNL": "De atmosfeer van een sensuele bloem",
+    "titleFR": "L'atmosphère d'une fleur sensuelle",
+    "category": "Sensualisme",
+    "length": 90,
+    "width": 120,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-4.jpg"
   },
   {
     "id": 5,
-    "title": "De klim in de ruimte",
-    "category": "Blauw",
-    "length": 80,
-    "width": 60,
-    "imageUrl": "assets/images/paintings/DeKlimInDeRuimteBig.jpg",
-    "description": "Een introspectief portret met nadruk op schaduw en expressie. De blik suggereert een moment van overpeinzing."
+    "titleNL": "Muze van de muziek",
+    "titleFR": "La muse de la musique",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 110,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-5.jpg"
   },
   {
     "id": 6,
-    "title": "De liefde van het leven",
-    "category": "Blauw",
+    "titleNL": "Struggle for life",
+    "titleFR": "TBD",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 110,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-6.jpg"
+  },
+  {
+    "id": 7,
+    "titleNL": "De gruwel",
+    "titleFR": "L'horreur",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 110,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-7.jpg"
+  },
+  {
+    "id": 8,
+    "titleNL": "De bebloemde schoonheid",
+    "titleFR": "La beauté fleurie",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-8.jpg"
+  },
+  {
+    "id": 9,
+    "titleNL": "TBD",
+    "titleFR": "Le regard et le mouvement de l’homme",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-9.jpg"
+  },
+  {
+    "id": 10,
+    "titleNL": "TBD",
+    "titleFR": "Culture de la Flandre",
+    "category": "Rood-Blauw",
+    "length": 80,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-10.jpg"
+  },
+  {
+    "id": 11,
+    "titleNL": "Ik droom",
+    "titleFR": "Je rêve",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-11.jpg"
+  },
+  {
+    "id": 12,
+    "titleNL": "De godin",
+    "titleFR": "La déesse",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-12.jpg"
+  },
+  {
+    "id": 13,
+    "titleNL": "Bloemen",
+    "titleFR": "Fleur",
+    "category": "Design",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-13.jpg"
+  },
+  {
+    "id": 14,
+    "titleNL": "De waterval",
+    "titleFR": "La cascade",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 90,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-14.jpg"
+  },
+  {
+    "id": 15,
+    "titleNL": "De bloementuin",
+    "titleFR": "Le jardin de fleurs",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-15.jpg"
+  },
+  {
+    "id": 16,
+    "titleNL": "Ik leef en zie",
+    "titleFR": "Je vois et je vie ",
+    "category": "Sensualisme",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-16.jpg"
+  },
+  {
+    "id": 17,
+    "titleNL": "De dam",
+    "titleFR": "Le barrage",
+    "category": "Het fantastische droomlandschap",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-17.jpg"
+  },
+  {
+    "id": 18,
+    "titleNL": "Rust en stilte",
+    "titleFR": "Repos complet",
+    "category": "Het fantastische droomlandschap",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-18.jpg"
+  },
+  {
+    "id": 19,
+    "titleNL": "De ontspanning",
+    "titleFR": "La détente",
+    "category": "Sensualisme",
+    "length": 70,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-19.jpg"
+  },
+  {
+    "id": 20,
+    "titleNL": "Explosie",
+    "titleFR": "Explosive",
+    "category": "Design",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-20.jpg"
+  },
+  {
+    "id": 21,
+    "titleNL": "De verkrachte natuur",
+    "titleFR": "La nature violée",
+    "category": "Het fantastische droomlandschap",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-21.jpg"
+  },
+  {
+    "id": 22,
+    "titleNL": "Oe garit",
+    "titleFR": "Oe garit",
+    "category": "Design",
+    "length": 37,
+    "width": 57,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-22.jpg"
+  },
+  {
+    "id": 23,
+    "titleNL": "Beschuldiging",
+    "titleFR": "L’accusation",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 95,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-23.jpg"
+  },
+  {
+    "id": 24,
+    "titleNL": "De natuurlijke droom",
+    "titleFR": "Le rêve naturel",
+    "category": "Het fantastische droomlandschap",
+    "length": 100,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-24.jpg"
+  },
+  {
+    "id": 25,
+    "titleNL": "De bergen van de loerders",
+    "titleFR": "La montagne des rôdeurs",
+    "category": "Sensualisme",
+    "length": 60,
+    "width": 90,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-25.jpg"
+  },
+  {
+    "id": 26,
+    "titleNL": "Het vrouwelijke",
+    "titleFR": "Le féminin",
+    "category": "Sensualisme",
+    "length": 100,
+    "width": 150,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-26.jpg"
+  },
+  {
+    "id": 27,
+    "titleNL": "Ik dood niet, ik wurg",
+    "titleFR": "je ne tue pas j'étrangle",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-27.jpg"
+  },
+  {
+    "id": 28,
+    "titleNL": "Toverhanden",
+    "titleFR": "Les mains magiques",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-28.jpg"
+  },
+  {
+    "id": 29,
+    "titleNL": "Ook wij zien u",
+    "titleFR": "TBD",
+    "category": "Sensualisme",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-29.jpg"
+  },
+  {
+    "id": 30,
+    "titleNL": "Design blue 2",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-30.jpg"
+  },
+  {
+    "id": 31,
+    "titleNL": "Het brugje",
+    "titleFR": "Le petit pont",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-31.jpg"
+  },
+  {
+    "id": 32,
+    "titleNL": "De bloei van de jeugd",
+    "titleFR": "Fleur de jeunesse",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-32.jpg"
+  },
+  {
+    "id": 33,
+    "titleNL": "De kasteelnimf",
+    "titleFR": "la nymphe du chateau",
+    "category": "Sensualisme",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-33.jpg"
+  },
+  {
+    "id": 34,
+    "titleNL": "Presentaties",
+    "titleFR": "Présentations",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-34.jpg"
+  },
+  {
+    "id": 35,
+    "titleNL": "Erotiek der schepping",
+    "titleFR": "L'érotisme de la création",
+    "category": "Rood-Blauw",
+    "length": 65,
+    "width": 105,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-35.jpg"
+  },
+  {
+    "id": 36,
+    "titleNL": "Afgunst voor de wereldse vrouw",
+    "titleFR": "TBD",
+    "category": "Rood-Blauw",
+    "length": 65,
+    "width": 90,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-36.jpg"
+  },
+  {
+    "id": 37,
+    "titleNL": "Strijd: geest - wetenschap",
+    "titleFR": "Combat: esprit - science",
+    "category": "Rood-Blauw",
+    "length": 90,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-37.jpg"
+  },
+  {
+    "id": 38,
+    "titleNL": "Kern van het leven",
+    "titleFR": "Noyau de vie",
+    "category": "Rood-Blauw",
+    "length": 55,
+    "width": 90,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-38.jpg"
+  },
+  {
+    "id": 39,
+    "titleNL": "Buste",
+    "titleFR": "TBD",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 85,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-39.jpg"
+  },
+  {
+    "id": 40,
+    "titleNL": "Keuze van de levenspartner",
+    "titleFR": "Le choix dans la vie",
+    "category": "Rood-Blauw",
+    "length": 90,
+    "width": 60,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-40.jpg"
+  },
+  {
+    "id": 41,
+    "titleNL": "Scheppingsdrang",
+    "titleFR": "L'envie de créer",
+    "category": "Rood-Blauw",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-41.jpg"
+  },
+  {
+    "id": 42,
+    "titleNL": "Snoese poes",
+    "titleFR": "TBD",
+    "category": "Rood-Blauw",
+    "length": 55,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-42.jpg"
+  },
+  {
+    "id": 43,
+    "titleNL": "De slurf",
+    "titleFR": "La trompe",
+    "category": "Design",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-43.jpg"
+  },
+  {
+    "id": 44,
+    "titleNL": "Sferen",
+    "titleFR": "sphères",
+    "category": "Design",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-44.jpg"
+  },
+  {
+    "id": 45,
+    "titleNL": "De verdrukking",
+    "titleFR": "L'oppression",
+    "category": "Rood-Blauw",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-45.jpg"
+  },
+  {
+    "id": 46,
+    "titleNL": "Ik overheers mijn wereld",
+    "titleFR": "Je domine mon monde",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-46.jpg"
+  },
+  {
+    "id": 47,
+    "titleNL": "Reisdromen",
+    "titleFR": "Les voyages des rêves",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-47.jpg"
+  },
+  {
+    "id": 48,
+    "titleNL": "Reflectie",
+    "titleFR": "Réflexion",
+    "category": "Design",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-48.jpg"
+  },
+  {
+    "id": 49,
+    "titleNL": "Archaïsch landschap",
+    "titleFR": "paysage Archeique",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-49.jpg"
+  },
+  {
+    "id": 50,
+    "titleNL": "Bouwexplosies",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 70,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-50.jpg"
+  },
+  {
+    "id": 51,
+    "titleNL": "Erosie",
+    "titleFR": "Erosion",
+    "category": "Design",
+    "length": 70,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-51.jpg"
+  },
+  {
+    "id": 52,
+    "titleNL": "De hekkens van mijn huis",
+    "titleFR": "Les grilles de ma maison",
+    "category": "Rood-Blauw",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-52.jpg"
+  },
+  {
+    "id": 53,
+    "titleNL": "De levensdruppel",
+    "titleFR": "La goutte de la vie",
+    "category": "Sensualisme",
+    "length": 70,
+    "width": 75,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-53.jpg"
+  },
+  {
+    "id": 54,
+    "titleNL": "Monica",
+    "titleFR": "Monica",
+    "category": "Rood-Blauw",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-54.jpg"
+  },
+  {
+    "id": 55,
+    "titleNL": "De grot",
+    "titleFR": "La grotte",
+    "category": "Design",
+    "length": 90,
+    "width": 120,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-55.jpg"
+  },
+  {
+    "id": 56,
+    "titleNL": "De spleet",
+    "titleFR": "La fente",
+    "category": "Design",
+    "length": 90,
+    "width": 120,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-56.jpg"
+  },
+  {
+    "id": 57,
+    "titleNL": "Mijn ochtendmaal",
+    "titleFR": "Mon déjeuner",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 100,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-57.jpg"
+  },
+  {
+    "id": 58,
+    "titleNL": "Geo 3",
+    "titleFR": "Geo 3",
+    "category": "Design",
+    "length": 90,
+    "width": 120,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-58.jpg"
+  },
+  {
+    "id": 59,
+    "titleNL": "Geo 1",
+    "titleFR": "Geo 1",
+    "category": "Design",
+    "length": 100,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-59.jpg"
+  },
+  {
+    "id": 60,
+    "titleNL": "Magische bloem",
+    "titleFR": "Fleur magique",
+    "category": "Design",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-60.jpg"
+  },
+  {
+    "id": 61,
+    "titleNL": "Indruk van Aveyron",
+    "titleFR": "Impression d'aveyron",
+    "category": "Design",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-61.jpg"
+  },
+  {
+    "id": 62,
+    "titleNL": "Het moerassig vallei",
+    "titleFR": "La vallée marécageuse",
+    "category": "Het fantastische droomlandschap",
+    "length": 70,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-62.jpg"
+  },
+  {
+    "id": 63,
+    "titleNL": "Rustig en verlaten",
+    "titleFR": "Le repos dans l’abandon",
+    "category": "Het fantastische droomlandschap",
     "length": 80,
     "width": 60,
-    "imageUrl": "assets/images/paintings/DeLiefdeVanHetLevenBig.jpg",
-    "description": "Een rustig landschap met weidse velden en lange schaduwen. De warme gloed van de ondergaande zon vormt het middelpunt."
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-63.jpg"
+  },
+  {
+    "id": 64,
+    "titleNL": "De liefde is onbegrensd",
+    "titleFR": "L’amour est illimité",
+    "category": "Sensualisme",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-64.jpg"
+  },
+  {
+    "id": 65,
+    "titleNL": "Spitszuil",
+    "titleFR": "Pyramide",
+    "category": "Design",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-65.jpg"
+  },
+  {
+    "id": 66,
+    "titleNL": "De boom",
+    "titleFR": "L'arbre",
+    "category": "Sensualisme",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-66.jpg"
+  },
+  {
+    "id": 67,
+    "titleNL": "Uit het verre verleden",
+    "titleFR": "Hors du passé",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-67.jpg"
+  },
+  {
+    "id": 68,
+    "titleNL": "Onbekende oorden",
+    "titleFR": "Lieux inconnus",
+    "category": "Het fantastische droomlandschap",
+    "length": 40,
+    "width": 30,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-68.jpg"
+  },
+  {
+    "id": 69,
+    "titleNL": "De vreemde",
+    "titleFR": "L'étranger",
+    "category": "Sensualisme",
+    "length": 35,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-69.jpg"
+  },
+  {
+    "id": 70,
+    "titleNL": "Alcoholisme",
+    "titleFR": "L’alcoolisme",
+    "category": "Rood-Blauw",
+    "length": 45,
+    "width": 35,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-70.jpg"
+  },
+  {
+    "id": 71,
+    "titleNL": "De weerschijn",
+    "titleFR": "Le reflet",
+    "category": "Design",
+    "length": 17,
+    "width": 23,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-71.jpg"
+  },
+  {
+    "id": 72,
+    "titleNL": "Een rustig oord",
+    "titleFR": "Un endroit",
+    "category": "Het fantastische droomlandschap",
+    "length": 23,
+    "width": 17,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-72.jpg"
+  },
+  {
+    "id": 73,
+    "titleNL": "De kemmelberg",
+    "titleFR": "le mont kemmel",
+    "category": "Het fantastische droomlandschap",
+    "length": 23,
+    "width": 17,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-73.jpg"
+  },
+  {
+    "id": 74,
+    "titleNL": "Open lucht schouwburg",
+    "titleFR": "Théâtre en plein air",
+    "category": "Design",
+    "length": 17,
+    "width": 23,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-74.jpg"
+  },
+  {
+    "id": 75,
+    "titleNL": "Het oneindige",
+    "titleFR": "L'infini",
+    "category": "Design",
+    "length": 25,
+    "width": 19,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-75.jpg"
+  },
+  {
+    "id": 76,
+    "titleNL": "Een onbekend oord",
+    "titleFR": "Un endroit inconnu",
+    "category": "Design",
+    "length": 40,
+    "width": 30,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-76.jpg"
+  },
+  {
+    "id": 77,
+    "titleNL": "Explosies",
+    "titleFR": "Explosions",
+    "category": "Sensualisme",
+    "length": 24,
+    "width": 32,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-77.jpg"
+  },
+  {
+    "id": 78,
+    "titleNL": "Structuren 1",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 40,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-78.jpg"
+  },
+  {
+    "id": 79,
+    "titleNL": "De weg naar het licht",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-79.jpg"
+  },
+  {
+    "id": 80,
+    "titleNL": "Vergeten ruïne",
+    "titleFR": "TBD",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-80.jpg"
+  },
+  {
+    "id": 81,
+    "titleNL": "Show in de natuur",
+    "titleFR": "Show dans la nature",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-81.jpg"
+  },
+  {
+    "id": 82,
+    "titleNL": "Rust en stilte",
+    "titleFR": "Repos et silence",
+    "category": "Het fantastische droomlandschap",
+    "length": 40,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-82.jpg"
+  },
+  {
+    "id": 83,
+    "titleNL": "De sluier van de rotsen",
+    "titleFR": "la voile des rochers",
+    "category": "Sensualisme",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-83.jpg"
+  },
+  {
+    "id": 84,
+    "titleNL": "De dageraad",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 40,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-84.jpg"
+  },
+  {
+    "id": 85,
+    "titleNL": "Bolvormigheid",
+    "titleFR": "TBD",
+    "category": "Design",
+    "length": 40,
+    "width": 50,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-85.jpg"
+  },
+  {
+    "id": 86,
+    "titleNL": "Spitszuilig",
+    "titleFR": "Pyramidal",
+    "category": "Design",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-86.jpg"
+  },
+  {
+    "id": 87,
+    "titleNL": "Eindeloos",
+    "titleFR": "infini",
+    "category": "Design",
+    "length": 50,
+    "width": 40,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-87.jpg"
+  },
+  {
+    "id": 88,
+    "titleNL": "De weg naar de natuur",
+    "titleFR": "Le chemin vers la nature",
+    "category": "Het fantastische droomlandschap",
+    "length": 32,
+    "width": 24,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-88.jpg"
+  },
+  {
+    "id": 89,
+    "titleNL": "Sensuele bloei",
+    "titleFR": "Floraison sensuelle",
+    "category": "Sensualisme",
+    "length": 24,
+    "width": 32,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-89.jpg"
+  },
+  {
+    "id": 90,
+    "titleNL": "Bloem",
+    "titleFR": "Fleur",
+    "category": "Sensualisme",
+    "length": 32,
+    "width": 24,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-90.jpg"
+  },
+  {
+    "id": 91,
+    "titleNL": "De bloem van de godin",
+    "titleFR": "La fleur de la deesse",
+    "category": "Sensualisme",
+    "length": 100,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-91.jpg"
+  },
+  {
+    "id": 92,
+    "titleNL": "De kleine klokkentorens",
+    "titleFR": "Les petits clochers",
+    "category": "Het fantastische droomlandschap",
+    "length": 60,
+    "width": 90,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-92.jpg"
+  },
+  {
+    "id": 93,
+    "titleNL": "De schone uit het verleden",
+    "titleFR": "TBD",
+    "category": "Sensualisme",
+    "length": 60,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-93.jpg"
+  },
+  {
+    "id": 94,
+    "titleNL": "Schuchter ontwaken",
+    "titleFR": "le réveil timide",
+    "category": "Rood-Blauw",
+    "length": 50,
+    "width": 60,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-94.jpg"
+  },
+  {
+    "id": 95,
+    "titleNL": "Meisje met schelp",
+    "titleFR": "fille avec coquille ",
+    "category": "Rood-Blauw",
+    "length": 46,
+    "width": 62,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-95.jpg"
+  },
+  {
+    "id": 96,
+    "titleNL": "Verborgen werelden",
+    "titleFR": "Lieux parties du monde cachées",
+    "category": "Design",
+    "length": 17,
+    "width": 23,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-96.jpg"
+  },
+  {
+    "id": 97,
+    "titleNL": "Ovobiologie",
+    "titleFR": "TBD",
+    "category": "Rood-Blauw",
+    "length": 50,
+    "width": 80,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-97.jpg"
+  },
+  {
+    "id": 98,
+    "titleNL": "Het interieur",
+    "titleFR": "L'interieur",
+    "category": "Rood-Blauw",
+    "length": 60,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-98.jpg"
+  },
+  {
+    "id": 99,
+    "titleNL": "Figuur",
+    "titleFR": "Figure",
+    "category": "Rood-Blauw",
+    "length": 50,
+    "width": 70,
+    "imageUrl": "assets/images/Schilderijen/AndreVanderhaeghe-99.jpg"
   }
 ]
