@@ -1,9 +1,9 @@
 export interface PaintingModel {
   id: number;
-  title: string;
+  titleNL: string;
+  titleFR?: string;
   category: string;
   length: number;
   width: number;
   imageUrl: string;
-  description: string;
 }

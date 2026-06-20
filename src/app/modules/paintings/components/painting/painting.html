@@ -1,6 +1,6 @@
 <div class="painting-card" (click)="onClickToDetailPage(painting().id)">
   <div class="image-container">
-    <img loading="lazy" [src]="painting().imageUrl" alt="{{ painting().title }}" />
+    <img loading="lazy" [src]="painting().imageUrl" alt="{{ painting().titleNL }}" />
   </div>
-  <h2>{{ painting().title }}</h2>
+  <h2>{{ painting().titleNL }}</h2>
 </div>

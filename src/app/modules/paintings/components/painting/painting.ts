@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { Router } from '@angular/router';
 import { PaintingModel } from '../../models/painting.model';
 
@@ -11,7 +11,7 @@ import { PaintingModel } from '../../models/painting.model';
 export class Painting {
   painting = input.required<PaintingModel>();
 
-  constructor(private router: Router) {}
+  private router: Router = inject(Router);
 
   onClickToDetailPage(paitingId: number) {
     this.router.navigate(['/painting-details', paitingId]);

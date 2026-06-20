@@ -29,16 +29,15 @@ export class PaintingsService {
 
   sortPaintings(data: PaintingModel[]): PaintingModel[] {
     return data.sort((a, b) => {
+      const titleCompare = a.titleNL.localeCompare(b.titleNL);
+      if (titleCompare !== 0) return titleCompare;
+
       const categoryCompare = a.category.localeCompare(b.category);
       if (categoryCompare !== 0) return categoryCompare;
-
-      const titleCompare = a.title.localeCompare(b.title);
-      if (titleCompare !== 0) return titleCompare;
 
       return a.length * a.width - b.length * b.width;
     });
   }
-
   getPaintingById(id: number): Signal<PaintingModel | undefined> {
     return computed(() => {
       const paintings = this.paintings();
