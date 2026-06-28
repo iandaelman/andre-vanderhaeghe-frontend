@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Footer } from '../../../../core/footer/footer';
 import { Header } from '../../../../core/header/header';
 
 @Component({
   selector: 'app-biography-page',
-  imports: [Footer, Header],
+  imports: [Header],
   templateUrl: './biography-page.html',
   styleUrl: './biography-page.css',
 })

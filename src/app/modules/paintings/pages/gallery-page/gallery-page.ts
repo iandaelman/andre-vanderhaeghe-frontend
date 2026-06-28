@@ -1,15 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { PaintingsService } from '../../services/paintings.service';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { PaintingModel } from '../../models/painting.model';
 import { from } from 'rxjs/internal/observable/from';
-import { PaintingComponent } from '../../components/painting/painting';
 import { Header } from '../../../../core/header/header';
-import { Footer } from '../../../../core/footer/footer';
+import { PaintingComponent } from '../../components/painting/painting';
+import { PaintingModel } from '../../models/painting.model';
+import { PaintingsService } from '../../services/paintings.service';
 
 @Component({
   selector: 'app-gallery-page',
-  imports: [PaintingComponent, Header, Footer],
+  imports: [PaintingComponent, Header],
   templateUrl: './gallery-page.html',
   styleUrl: './gallery-page.css',
 })
