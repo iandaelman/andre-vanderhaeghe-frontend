@@ -1,0 +1,7 @@
+@if (paintingsResource.hasValue()) {
+  <div class="painting-grid">
+    @for (painting of paintingsResource.value(); track painting.id) {
+      <app-painting [painting]="painting"></app-painting>
+    }
+  </div>
+}

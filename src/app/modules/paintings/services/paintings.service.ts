@@ -1,10 +1,8 @@
-import { PaintingModel } from './../models/painting.model';
 import { HttpClient } from '@angular/common/http';
-import { computed, inject, Injectable, Signal, signal } from '@angular/core';
+import { inject, Service, signal } from '@angular/core';
 import { lastValueFrom } from 'rxjs/internal/lastValueFrom';
-@Injectable({
-  providedIn: 'root',
-})
+import { PaintingModel } from './../models/painting.model';
+@Service()
 export class PaintingsService {
   private dataUrl = 'assets/data/paintings.json';
 
