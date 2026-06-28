@@ -1,6 +1,7 @@
 import { PaintingModel } from './../models/painting.model';
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, Signal, signal } from '@angular/core';
+import { lastValueFrom } from 'rxjs/internal/lastValueFrom';
 @Injectable({
   providedIn: 'root',
 })
@@ -11,23 +12,21 @@ export class PaintingsService {
 
   public paintings = signal<PaintingModel[]>([]);
 
-  loadPaintings(): void {
+  public async loadPaintings(): Promise<void> {
     if (this.paintings().length > 0) {
       return;
     }
-
-    this.httpClient.get<PaintingModel[]>(this.dataUrl).subscribe({
-      next: (data) => {
-        const sortedData = this.sortPaintings(data);
-        this.paintings.set(sortedData);
-      },
-      error: (err) => {
-        console.error('Not able to fetch the paintings', err);
-      },
-    });
+    try {
+      const response = await lastValueFrom(this.httpClient.get<PaintingModel[]>(this.dataUrl));
+      const sortedData = this.sortPaintings(response);
+      this.paintings.set(sortedData);
+    } catch (err) {
+      console.error('Not able to fetch the paintings', err);
+      this.paintings.set([]);
+    }
   }
 
-  sortPaintings(data: PaintingModel[]): PaintingModel[] {
+  private sortPaintings(data: PaintingModel[]): PaintingModel[] {
     return data.sort((a, b) => {
       const titleCompare = a.titleNL.localeCompare(b.titleNL);
       if (titleCompare !== 0) return titleCompare;
@@ -38,22 +37,17 @@ export class PaintingsService {
       return a.length * a.width - b.length * b.width;
     });
   }
-  getPaintingById(id: number): Signal<PaintingModel | undefined> {
-    return computed(() => {
-      const paintings = this.paintings();
-
-      // Als paintings nog niet geladen zijn, return undefined
-      if (paintings.length === 0) {
-        return undefined;
-      }
-
-      // Als paintings wel geladen zijn maar painting niet gevonden
-      const painting = paintings.find((p) => p.id === id);
-      if (!painting) {
-        throw new Error(`Painting met Id ${id} werd niet gevonden`);
-      }
-
-      return painting;
-    });
+  public getPaintingById(id: number): PaintingModel | undefined {
+    const paintings = this.paintings();
+    // Als paintings nog niet geladen zijn, return undefined
+    if (paintings.length === 0) {
+      return undefined;
+    }
+    // Als paintings wel geladen zijn maar painting niet gevonden
+    const painting = paintings.find((p) => p.id === id);
+    if (!painting) {
+      throw new Error(`Painting met Id ${id} werd niet gevonden`);
+    }
+    return painting;
   }
 }
