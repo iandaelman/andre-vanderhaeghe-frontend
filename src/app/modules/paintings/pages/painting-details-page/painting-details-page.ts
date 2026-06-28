@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, OnInit, signal } from '@angular/core';
 import { PaintingModel } from '../../models/painting.model';
 import { ActivatedRoute } from '@angular/router';
 import { PaintingsService } from '../../services/paintings.service';
@@ -12,14 +12,23 @@ import { Header } from '../../../../core/header/header';
   styleUrl: './painting-details-page.css',
 })
 export class PaintingDetailsPage implements OnInit {
-  private id!: number;
-  protected painting = signal<PaintingModel | undefined>(undefined);
-
   private route: ActivatedRoute = inject(ActivatedRoute);
   private paintingService: PaintingsService = inject(PaintingsService);
 
+  private id = signal<number | undefined>(undefined);
+
+  protected painting = computed(() => {
+    const paintingId = this.id();
+    if (!paintingId) return undefined;
+
+    try {
+      return this.paintingService.getPaintingById(paintingId);
+    } catch (err) {
+      return undefined;
+    }
+  });
+
   ngOnInit(): void {
-    this.id = +this.route.snapshot.paramMap.get('id')!;
-    this.painting.set(this.paintingService.getPaintingById(this.id));
+    this.id.set(+this.route.snapshot.paramMap.get('id')!);
   }
 }
