@@ -1,19 +1,118 @@
-.painting-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
+:host {
+  display: block;
+  height: 100%;
 }
 
-@media (max-width: 900px) {
-  .painting-grid {
-    grid-template-columns: repeat(2, 1fr);
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Image Section */
+.image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigation Section */
+.navigation {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-family: 'Georgia', 'Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+  transition:
+    border-bottom-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #666;
+  border-bottom-color: #2a2a2a;
+}
+
+.nav-link:focus-visible {
+  outline: none;
+  color: #444;
+  border-bottom-color: #2a2a2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-container {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .content-wrapper {
+    gap: 2rem;
+  }
+
+  .portrait {
+    max-width: 100%;
+  }
+
+  .navigation {
+    gap: 1.5rem;
+    font-size: 0.95rem;
   }
 }
 
-/* Mobiel: 1 per rij */
-@media (max-width: 600px) {
-  .painting-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .homepage-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .content-wrapper {
+    gap: 1.5rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    letter-spacing: 0.3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
   }
 }
