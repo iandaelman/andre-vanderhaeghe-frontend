@@ -3,10 +3,12 @@ import { PaintingModel } from '../../models/painting.model';
 import { ActivatedRoute } from '@angular/router';
 import { PaintingsService } from '../../services/paintings.service';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { Header } from '../../../../core/header/header';
+import { Footer } from '../../../../core/footer/footer';
 
 @Component({
   selector: 'app-painting-details-page',
-  imports: [MatExpansionModule],
+  imports: [MatExpansionModule, Header, Footer],
   templateUrl: './painting-details-page.html',
   styleUrl: './painting-details-page.css',
 })

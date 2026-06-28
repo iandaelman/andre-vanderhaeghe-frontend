@@ -4,10 +4,12 @@ import { rxResource } from '@angular/core/rxjs-interop';
 import { PaintingModel } from '../../models/painting.model';
 import { from } from 'rxjs/internal/observable/from';
 import { PaintingComponent } from '../../components/painting/painting';
+import { Header } from '../../../../core/header/header';
+import { Footer } from '../../../../core/footer/footer';
 
 @Component({
   selector: 'app-gallery-page',
-  imports: [PaintingComponent],
+  imports: [PaintingComponent, Header, Footer],
   templateUrl: './gallery-page.html',
   styleUrl: './gallery-page.css',
 })

@@ -1,4 +1,5 @@
 @if (painting(); as p) {
+  <app-header />
   <div class="detail-container">
     <div class="image-container">
       <img [src]="p.imageUrl" alt="{{ p.titleNL }}" />
@@ -19,6 +20,7 @@
       </mat-expansion-panel>
     </mat-accordion>
   </div>
+  <app-footer />
 } @else {
   <div class="loading-container">Gallerij laden</div>
 }
