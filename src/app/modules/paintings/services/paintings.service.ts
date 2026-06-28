@@ -12,9 +12,9 @@ export class PaintingsService {
 
   public paintings = signal<PaintingModel[]>([]);
 
-  public async loadPaintings(): Promise<void> {
+  public async loadPaintings(): Promise<PaintingModel[]> {
     if (this.paintings().length > 0) {
-      return;
+      return this.paintings();
     }
     try {
       const response = await lastValueFrom(this.httpClient.get<PaintingModel[]>(this.dataUrl));
@@ -23,6 +23,8 @@ export class PaintingsService {
     } catch (err) {
       console.error('Not able to fetch the paintings', err);
       this.paintings.set([]);
+    } finally {
+      return this.paintings();
     }
   }
 

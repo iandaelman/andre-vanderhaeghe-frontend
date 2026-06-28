@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal, Signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { PaintingModel } from '../../models/painting.model';
 import { ActivatedRoute } from '@angular/router';
 import { PaintingsService } from '../../services/paintings.service';

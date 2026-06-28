@@ -1,8 +1,12 @@
+import { lastValueFrom } from 'rxjs/internal/lastValueFrom';
 import { Component, inject, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { PaintingsService } from '../../services/paintings.service';
 import { Painting } from '../../components/painting/painting';
+import { rxResource } from '@angular/core/rxjs-interop';
+import { PaintingModel } from '../../models/painting.model';
+import { from } from 'rxjs/internal/observable/from';
 
 @Component({
   selector: 'app-home-page',
@@ -11,12 +15,12 @@ import { Painting } from '../../components/painting/painting';
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })
-export class HomePage implements OnInit {
+export class HomePage {
   private paintingService = inject(PaintingsService);
 
   public paintings = this.paintingService.paintings;
 
-  ngOnInit(): void {
-    this.paintingService.loadPaintings();
-  }
+  protected paintingsResource = rxResource<PaintingModel[], void>({
+    stream: () => from(this.paintingService.loadPaintings()),
+  });
 }
