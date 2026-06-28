@@ -1,17 +1,16 @@
-import { lastValueFrom } from 'rxjs/internal/lastValueFrom';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { rxResource } from '@angular/core/rxjs-interop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { PaintingsService } from '../../services/paintings.service';
-import { Painting } from '../../components/painting/painting';
-import { rxResource } from '@angular/core/rxjs-interop';
-import { PaintingModel } from '../../models/painting.model';
 import { from } from 'rxjs/internal/observable/from';
+import { PaintingComponent } from '../../components/painting/painting';
+import { PaintingModel } from '../../models/painting.model';
+import { PaintingsService } from '../../services/paintings.service';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, Painting],
+  imports: [MatCardModule, MatButtonModule, PaintingComponent],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })

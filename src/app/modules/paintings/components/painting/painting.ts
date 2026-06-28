@@ -8,7 +8,7 @@ import { PaintingModel } from '../../models/painting.model';
   templateUrl: './painting.html',
   styleUrl: './painting.css',
 })
-export class Painting {
+export class PaintingComponent {
   painting = input.required<PaintingModel>();
 
   private router: Router = inject(Router);

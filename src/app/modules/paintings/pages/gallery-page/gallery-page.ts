@@ -3,11 +3,11 @@ import { PaintingsService } from '../../services/paintings.service';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { PaintingModel } from '../../models/painting.model';
 import { from } from 'rxjs/internal/observable/from';
-import { Painting } from '../../components/painting/painting';
+import { PaintingComponent } from '../../components/painting/painting';
 
 @Component({
   selector: 'app-gallery-page',
-  imports: [Painting],
+  imports: [PaintingComponent],
   templateUrl: './gallery-page.html',
   styleUrl: './gallery-page.css',
 })
