@@ -1,12 +1,37 @@
 <header class="site-header">
   <a routerLink="/"><img src="assets/images/logo/AV_logo.jpg" alt="Galerij Logo" class="logo" /></a>
-  <!-- Navigatie helemaal rechts -->
+
   <nav class="main-nav">
     <ul>
-      <li><a routerLink="/galerij">Galerij</a></li>
-      <li><a routerLink="/biografie">Biografie</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
+      <li (mouseenter)="openMenu()" (mouseleave)="scheduleClose()">
+        <button matButton #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="galerij">
+          Gallerij
+        </button>
+      </li>
+      <li><button matButton routerLink="/biografie">Biografie</button></li>
+      <li><button matButton routerLink="/contact">Contact</button></li>
     </ul>
   </nav>
-  <!-- Logo helemaal links -->
+
+  <mat-menu #galerij="matMenu" [hasBackdrop]="false">
+    <div (mouseenter)="cancelClose()" (mouseleave)="scheduleClose()">
+      <button mat-menu-item routerLink="/galerij">Alle schilderijen</button>
+      <button mat-menu-item routerLink="/galerij" [queryParams]="{ periode: 'Rood-Blauw' }">
+        Rood-Blauw
+      </button>
+      <button
+        mat-menu-item
+        routerLink="/galerij"
+        [queryParams]="{ periode: 'Het fantastische droomlandschap' }"
+      >
+        Het fantastische droomlandschap
+      </button>
+      <button mat-menu-item routerLink="/galerij" [queryParams]="{ periode: 'Sensualisme' }">
+        Sensualisme
+      </button>
+      <button mat-menu-item routerLink="/galerij" [queryParams]="{ periode: 'Design' }">
+        Design
+      </button>
+    </div>
+  </mat-menu>
 </header>

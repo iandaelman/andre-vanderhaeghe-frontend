@@ -8,21 +8,30 @@ export class PaintingsService {
 
   private httpClient = inject(HttpClient);
 
+  // Cache van alle ongefilterde data
+  private allPaintings = signal<PaintingModel[]>([]);
   public paintings = signal<PaintingModel[]>([]);
 
-  public async loadPaintings(): Promise<PaintingModel[]> {
-    if (this.paintings().length > 0) {
-      return this.paintings();
-    }
+  public async loadPaintings(period?: string): Promise<PaintingModel[]> {
     try {
-      const response = await lastValueFrom(this.httpClient.get<PaintingModel[]>(this.dataUrl));
-      const sortedData = this.sortPaintings(response);
-      this.paintings.set(sortedData);
+      // Alleen ophalen als we nog niets in cache hebben
+      if (this.allPaintings().length === 0) {
+        const response = await lastValueFrom(this.httpClient.get<PaintingModel[]>(this.dataUrl));
+        const sortedData = this.sortPaintings(response);
+        this.allPaintings.set(sortedData);
+      }
+
+      // Filter altijd toepassen op basis van de huidige period
+      const filtered = period
+        ? this.allPaintings().filter((painting) => painting.category === period)
+        : this.allPaintings();
+
+      this.paintings.set(filtered);
+      return filtered;
     } catch (err) {
       console.error('Not able to fetch the paintings', err);
       this.paintings.set([]);
-    } finally {
-      return this.paintings();
+      return [];
     }
   }
 
