@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
 })
 export class HomePage {
   protected navigationLinks = [
-    { label: 'Gallerij', route: '/gallerij' },
+    { label: 'Galerij', route: '/galerij' },
     { label: 'Biografie', route: '/biografie' },
     { label: 'Contact', route: '/contact' },
   ];

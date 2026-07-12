@@ -11,7 +11,7 @@ export const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'gallerij',
+    path: 'galerij',
     component: GalleryPage,
   },
   {
