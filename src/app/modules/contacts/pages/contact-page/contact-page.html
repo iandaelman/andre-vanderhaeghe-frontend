@@ -8,20 +8,31 @@
   <div class="contact-layout">
     <!-- Formulier -->
     <section class="contact-form-section">
-      <form class="contact-form">
+      <form class="contact-form" (submit)="$event.preventDefault(); onSubmit()">
         <div class="form-group">
           <label for="name">Naam</label>
-          <input id="name" type="text" name="name" placeholder="Uw naam" required />
+          <input id="name" type="text" placeholder="Uw naam" [formField]="contactForm.name" />
+          @if (contactForm.name().touched() && contactForm.name().errors().length) {
+            <p class="field-error">{{ contactForm.name().errors()[0]?.message }}</p>
+          }
         </div>
 
         <div class="form-group">
           <label for="email">E-mailadres</label>
-          <input id="email" type="email" name="email" placeholder="uw@email.be" required />
+          <input
+            id="email"
+            type="email"
+            placeholder="uw@email.be"
+            [formField]="contactForm.email"
+          />
+          @if (contactForm.email().touched() && contactForm.email().errors().length) {
+            <p class="field-error">{{ contactForm.email().errors()[0]?.message }}</p>
+          }
         </div>
 
         <div class="form-group">
           <label for="subject">Onderwerp</label>
-          <select id="subject" name="subject">
+          <select id="subject" [formField]="contactForm.subject">
             <option value="">Kies een onderwerp</option>
             <option value="schilderij">Vraag over een schilderij</option>
             <option value="tentoonstelling">Tentoonstelling</option>
@@ -34,14 +45,22 @@
           <label for="message">Bericht</label>
           <textarea
             id="message"
-            name="message"
             placeholder="Uw bericht..."
             rows="6"
-            required
+            [formField]="contactForm.message"
           ></textarea>
+          @if (contactForm.message().touched() && contactForm.message().errors().length) {
+            <p class="field-error">{{ contactForm.message().errors()[0]?.message }}</p>
+          }
         </div>
 
-        <button type="submit" class="btn-submit">Verstuur bericht</button>
+        <button
+          type="submit"
+          class="btn-submit"
+          [disabled]="contactForm().submitting() || contactForm().invalid()"
+        >
+          {{ contactForm().submitting() ? 'Bezig...' : 'Verstuur bericht' }}
+        </button>
       </form>
     </section>
 
