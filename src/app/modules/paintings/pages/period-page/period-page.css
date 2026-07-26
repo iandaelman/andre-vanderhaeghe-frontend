@@ -2,16 +2,14 @@
   display: block;
   height: 100%;
 }
-
 .gallery-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 150px); /* 80px = hoogte van je header, aan te passen */
   padding: 2rem;
   background-color: #ffffff;
 }
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
