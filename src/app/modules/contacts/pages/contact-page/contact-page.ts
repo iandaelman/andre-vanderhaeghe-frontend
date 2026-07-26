@@ -16,7 +16,7 @@ interface ContactFormData {
   styleUrl: './contact-page.css',
 })
 export class ContactPage {
-  private readonly RECIPIENT = 'xavier_vanderhaeghe@skynet.be';
+  private readonly RECIPIENT = 'andre.vanderhaeghe@gmail.com';
 
   private readonly subjectLabels: Record<string, string> = {
     schilderij: 'Vraag over een schilderij',
