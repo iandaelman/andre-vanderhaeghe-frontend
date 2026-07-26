@@ -4,6 +4,7 @@ import { PaintingDetailsPage } from './modules/paintings/pages/painting-details-
 import { BiographyPage } from './modules/biography/pages/biography-page/biography-page';
 import { ContactPage } from './modules/contacts/pages/contact-page/contact-page';
 import { GalleryPage } from './modules/paintings/pages/gallery-page/gallery-page';
+import { PeriodPage } from './modules/paintings/pages/period-page/period-page';
 
 export const routes: Routes = [
   {
@@ -12,6 +13,10 @@ export const routes: Routes = [
   },
   {
     path: 'galerij',
+    component: PeriodPage,
+  },
+  {
+    path: 'galerij/periode',
     component: GalleryPage,
   },
   {

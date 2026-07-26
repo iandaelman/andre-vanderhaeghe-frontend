@@ -1,0 +1,17 @@
+<app-header />
+<div class="gallery-container">
+  <div class="content-wrapper">
+    <h1 class="gallery-title">Periodes</h1>
+
+    <div class="periods-grid">
+      @for (period of periods; track period.id) {
+        <a routerLink="/galerij/periode" [queryParams]="{ periode: period.id }" class="period-card">
+          <div class="period-image-wrapper">
+            <img [src]="period.image" [alt]="period.label" class="period-image" />
+          </div>
+          <p class="period-label">{{ period.label }}</p>
+        </a>
+      }
+    </div>
+  </div>
+</div>
