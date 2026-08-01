@@ -21,7 +21,8 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"]
+            "styles": ["src/styles.scss"],
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
@@ -37,16 +38,9 @@
                   "maximumError": "1MB"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/andre-vanderhaeghe-frontend/"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "outputHashing": "all"
             }
-          },
-          "defaultConfiguration": "production"
+          }
         },
         "serve": {
           "builder": "@angular/build:dev-server",
