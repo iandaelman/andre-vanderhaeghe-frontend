@@ -10,25 +10,31 @@ export const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    title: 'André Vanderhaeghe | Belgisch surrealistisch kunstenaar',
   },
   {
     path: 'galerij',
     component: PeriodPage,
+    title: 'Galerij | Schilderijen van André Vanderhaeghe',
   },
   {
     path: 'galerij/periode',
     component: GalleryPage,
+    title: 'Oeuvre per periode | André Vanderhaeghe',
   },
   {
     path: 'painting-details/:id',
     component: PaintingDetailsPage,
+    title: 'Schilderij | André Vanderhaeghe',
   },
   {
     path: 'biografie',
     component: BiographyPage,
+    title: 'André Vanderhaeghe biografie | Surrealistisch kunstenaar',
   },
   {
     path: 'contact',
     component: ContactPage,
+    title: 'Contact | André Vanderhaeghe',
   },
 ];
