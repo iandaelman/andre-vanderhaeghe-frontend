@@ -1,6 +1,10 @@
 <div class="painting-card" (click)="onClickToDetailPage(painting().id)">
   <div class="image-container">
-    <img loading="lazy" [src]="painting().imageUrl" alt="{{ painting().titleNL }}" />
+    <img
+      loading="lazy"
+      [src]="painting().imageUrl"
+      [alt]="painting().titleNL + ' - schilderij van André Vanderhaeghe'"
+    />
   </div>
   <h2>{{ painting().titleNL }}</h2>
 </div>
