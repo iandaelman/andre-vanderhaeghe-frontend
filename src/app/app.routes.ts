@@ -23,7 +23,7 @@ export const routes: Routes = [
     title: 'Oeuvre per periode | André Vanderhaeghe',
   },
   {
-    path: 'painting-details/:id',
+    path: 'schilderij/:id',
     component: PaintingDetailsPage,
     title: 'Schilderij | André Vanderhaeghe',
   },

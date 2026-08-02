@@ -14,6 +14,6 @@ export class PaintingComponent {
   private router: Router = inject(Router);
 
   protected onClickToDetailPage(paitingId: number) {
-    this.router.navigate(['/painting-details', paitingId]);
+    this.router.navigate(['/schilderij', paitingId]);
   }
 }
